@@ -1,0 +1,189 @@
+.borde {
+  border: solid, 1px, black; 
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    
+}
+@media only screen and (min-width: 1023px){
+
+}
+/*.centrar{
+	text-align: center;
+}*/
+.p10{
+	padding-top: 20px;
+}
+.display-4{
+	font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #081c15;
+}
+.h1{
+	
+}
+/*.row{
+	padding-right: 0px;
+	padding-left: 0px;
+}*/
+body {
+    margin: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-image: linear-gradient(to top, #fff, #d8f3dc, #99e2b4);
+}
+main{
+  display: block;
+}
+.copyright{
+  font-size: 0.7rem;
+}
+.card-title{
+  font-size: 1.6rem;
+}
+.card-footer{
+  font-size: 0.9rem;
+}
+.obligatorio{
+  color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media only screen and (min-width: 769px){
+  .gridContainerPadre {
+    display: grid;
+    grid-template-areas: "cabeza" "cuerpo" "pie";
+    grid-template-rows: 10% 70% 20%;
+    grid-template-columns: 100%; 
+  }
+  .cabeza {
+    grid-area: "cabeza"; 
+    display: flex;
+    justify-content: space-between;
+   /* height: 80px; */
+  }
+  .cabezaLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cabezaNav {
+    display: flex;
+    flex-direction: row;
+  }
+  .cuerpo {
+    grid-area: "cuerpo";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cuerpoTitulo{
+    margin-top: 0px;
+    margin-bottom: 3px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #036666;
+    border-width: 2px;
+    width: 45%;
+    height: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+  .cuerpoForm p{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cuerpoForm p label span{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+  }
+  /*.nombre{
+    display: flex;
+    flex-direction: column;
+  }
+  .email{
+    display: flex;
+    flex-direction: column;
+  }
+  .telefono{
+    display: flex;
+    flex-direction: column;
+  }
+  .asunto{
+    display: flex;
+    flex-direction: column;
+  }
+  .mensaje{
+    display: flex;
+    flex-direction: column;
+  }*/
+  .boton{
+    display: flex;
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+  }
+  .aviso{
+    font-size: 15px;
+  }
+  .pie {
+    display: grid;
+    grid-template-areas: "logo nav derechos";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+  }
+  .pieLogo {
+    grid-area: "logo"; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+  }
+  .pieNav {
+    grid-area: "nav";
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .pieDerechos {
+    grid-area: "derechos";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pieDerechos p {
+    font-size: 0.7rem;
+  }
+
+
+
+
+}
+/*.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 1;
+  }
+}
+*/
